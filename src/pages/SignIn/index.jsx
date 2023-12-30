@@ -7,7 +7,7 @@ import { useAuth } from '../../hooks/auth';
 import { Input } from '../../components/input'
 import { Button } from '../../components/button'
 
-import { Container, Form, Background } from "./style";
+import { Container, Form, Background,  } from "./style";
 
 export function SignIn() {
     const [ email, setEmail ] = useState("");
@@ -25,8 +25,8 @@ export function SignIn() {
     return(
         <Container>
             <Form>
-                <h1>Rocket Notes</h1>
-                <p>Aplicação para salvara e gerenciar seus links úteis.</p>
+                <h1>Rocket Movies</h1>
+                <p>Aplicação para acompanhar tudo que assistir.</p>
 
                 <h2>Faça seu login</h2>
                 <Input 

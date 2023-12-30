@@ -1,6 +1,7 @@
 // making login interface
 import { useState } from 'react';
 import { FiMail, FiLock, FiUser } from  'react-icons/fi'
+import { IoMdArrowBack } from "react-icons/io"
 
 import { Input } from '../../components/input'
 import { Button } from '../../components/button'
@@ -43,8 +44,8 @@ export function SignUp() {
             <Background />
             <Form>
 
-                <h1>Rocket Notes</h1>
-                <p>Aplicação para salvara e gerenciar seus links úteis.</p>
+                <h1>RocketMovies</h1>
+                <p>Aplicação para acompanhar tudo que assistir.</p>
 
                 <h2>Crie sua conta</h2>
 
@@ -70,7 +71,13 @@ export function SignUp() {
 
                 <Button title="Cadastrar" onClick={handleSignUp}/>
 
-                <Link to="/">Voltar para o login</Link>
+                <div className='back'>
+                    <IoMdArrowBack /> 
+                    <Link to="/">                
+                      Voltar para o login
+                    </Link>      
+                </div>     
+
             </Form>
 
         </Container>

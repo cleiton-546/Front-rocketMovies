@@ -14,18 +14,17 @@ export const Form = styled.form`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: start;
   text-align: center;
 
   > h1 {
     font-size: 48px;
-    color: ${({ theme }) => theme.COLORS.ORANGE};
+    color: ${({ theme }) => theme.COLORS.RED};
   }
 
   > h2 {
     font-size: 24px;
     margin: 48px 0;
-   
   }
 
   > p {
@@ -33,10 +32,23 @@ export const Form = styled.form`
     color: ${({ theme }) => theme.COLORS.GRAY_100};
   }
 
-  > a {
-    margin-top: 80px;
+  .back {
+    margin-left: 85px;
+    color: ${({ theme }) => theme.COLORS.RED};
+    margin-top: 60px;
+    display: flex;
+  }
+
+  .back a {
     color: ${({ theme }) => theme.COLORS.RED};
   }
+
+  .back svg {
+    font-size: 20px;
+    
+  }
+
+ 
 `;
 
 export const Background = styled.div`
